@@ -1,100 +1,102 @@
-body{
-    font-family: 'Arial', 'Verdana';
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+p{
+    padding-top: 15px;
+}
+a{
+    font-size: 16px;
+    color: #B21F50;
+    text-decoration: underline wavy;
+}
+*:focus{
+    border: 6px dashed #417243;
+    outline: none;
 
 }
 
 h1{
-    font-size: 42px; 
     text-align: center;
-    padding: 15px;
-
-}
-
-h2{
-    font-size: 30px;
-    color: #0D0D0D; 
-}
-
-p{
-    font-size: 24px;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-img{
-    display: block;
-    width: 250px;
-    margin: 0 auto;
-    border: 10px white dashed;
-
-}
-
-div{
-    min-height: 200px;
-    padding: 20px;
-    border: 3px white solid;
-
-}
-
-.introduction{
-    border-radius: 15px;
-    margin-top: 15px;
     line-height: 2;
+    font-family: 'Syncopate', 'sans-serif';
 }
 
-.red{
-    background-color: #ff0000;
-    text-align: right;
-    margin-left: 50px;
-    border-bottom-width: 2px;
-    border-left-width: 5px; 
-
+body{
+    background-image: url('../images/pigeon-background.jpg');
+    background-position: center;
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.blue{
-    background-color: #0000ff;
-    text-align: left;
-    margin-right: 50px;
-    border-right-width: 5px;
-    border-top-width: 5px;
+tbody td{
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+/* At least 125px wide
+10px padding
+White uppercase text
+Dark red background (#7e0820)
+Text centered horizontally */
+
+thead th{
+    min-width: 125px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #7e0820;
+    text-align: center;
+}
+/* Row headers: consistent 2px border – 
+apply only where the neighbor does not 
+have a border already. */
+
+tbody th{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
 }
 
-.blue h2, .blue p{
-    color: #C4C4C4
+table tr:hover{
+   background-color: rgba(126,8,32,0.25);
 }
 
-.yellow {
-    background-color: #ffff00;
-    text-align: right;
-    margin-left: 50px;
-    border-left: 5px;
-    border-bottom: 2px;
-
+tr:nth-child(even){
+    background-color: #D1D1D1;
 }
 
-.yellow p {
-    color: #707070;
+table{
+    border-spacing: 0px;
+    /* border-right: 2px solid black; */
+    margin: auto;
 }
 
-.green{
-    background-color: #008500;
-    text-align: left;
-    margin-right: 50px;
-    border-right-width: 5px;
-    border-top-width: 2px;
+thead th:first-child{
+    border-top-left-radius: 20px;
 }
 
-footer{
-    border: 5px solid #ffffff
+thead th:last-child{
+    border-top-right-radius: 20px;
 }
+tbody tr:last-child th:first-child{
+    border-bottom-left-radius: 20px;
+}
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+}
+tbody td:last-child{
+    border-right: 2px solid black; 
+}
+/* Change the border-spacing to 0px and add a 2px border to the righthand side of the table.
 
-footer p{
-    font-size: 20px;
-    text-align: right;
-    padding: 15px 15px 0 15px
-}
+
+Center the table when narrower than the screen.
+
+
+Apply 20px rounded corners to the outer border.
+Use pseudoclasses to ensure only the outer cells are rounded, not all cells.
+It’s acceptable if there’s white space between the border and table edges. */
+
+
+
+
+
+
