@@ -55,6 +55,7 @@ tbody th{
     border-right: 2px solid black;
 }
 
+
 table tr:hover{
    background-color: rgba(126,8,32,0.25);
 }
@@ -82,9 +83,10 @@ tbody tr:last-child th:first-child{
 tbody tr:last-child td:last-child{
     border-bottom-right-radius: 20px;
 }
-tbody td:last-child{
+tbody td:last-child, thead th:last-child{
     border-right: 2px solid black; 
 }
+
 /* Change the border-spacing to 0px and add a 2px border to the righthand side of the table.
 
 
